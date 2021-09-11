@@ -1,0 +1,370 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+:root{
+    --body-color:rgb(29,32,40);
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--body-color);
+}
+/* Starting of header section */
+.header{
+    background: rgb(32,34,47);
+}
+/* Button CSS */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,55,1) 74%, rgba(0,212,255,1) 100%);;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px ;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  /* end of button */
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding:2% 0;
+    height:20vh;
+    position: relative;
+}
+
+.header-title{
+    color:white;
+    text-transform: capitalize;
+    
+    font-weight: bold;
+   
+}
+.header-followers{
+    text-transform: capitalize;
+    color:rgb(133,141,173);
+}
+.header-followers{
+    display: block;
+}
+.switch{
+    display: flex;
+    align-items: center;
+}
+.switch-text{
+    margin-left: -80px;
+    color:white;
+}
+  /* end of header */
+
+
+
+  /* start socail */
+
+.socail-media{
+    width:80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top:20%;
+    
+    right:10%;
+}
+
+/* single soocail */
+.single-social{
+    width:300px;
+    text-align: center;
+    /* background: rgb(35,44,66); */
+   
+    margin-right: 30px;
+    border-radius: 6px;
+    transition: all 2s linear;
+    cursor: pointer;
+}
+/* .single-social:hover{
+    background: rgb(49,59,84);
+} */
+.single-socail-text{
+    font-size: 18px;
+    color: grey;
+   margin:20px 0;
+   
+}
+.social{
+    height:18px;
+    margin-right:5px;
+}
+.single-social-year{
+    font-size: 60px;
+    
+    color: white;
+}
+.single-social-followers{
+    text-transform: uppercase;
+    color: grey;
+    letter-spacing: 0.2rem;
+    font-weight: lighter;
+    margin-bottom: 20px;
+
+}
+.single-socail-rating{
+    font-size: 14px;
+    padding-bottom: 20px;
+    color:green;
+
+}
+.arrow{
+    height:8px;
+    margin-right: 5px;
+    
+}
+.up-arrow{
+    color:green;
+}
+.down-arrow{
+    color:red;
+}
+/* end os socail */
+.first{
+    border-top: 5px solid rgb(56,50,162);
+    border-top: linear-gradient(90deg, rgba(56,50,162,1) 26%, rgba(52,107,119,1) 100%, rgba(11,112,52,1) 100%);
+}
+.second{
+    border-top: 5px solid rgb(56,50,162);
+    border-top: linear-gradient(90deg, rgba(56,50,162,1) 26%, rgba(52,107,119,1) 100%, rgba(11,112,52,1) 100%);
+}
+.third{
+    border-top: 5px solid rgb(214,106,30);
+    border-top: linear-gradient(90deg, rgba(214,106,30,1) 7%, rgba(0,0,0,1) 100%, rgba(11,112,52,1) 100%);
+}
+.fourth{
+    border-top: 5px solid red;
+}
+.decrease{
+    color:red;
+}
+  /* end of start socail */
+  /* bottom section */
+  .bottom{
+      width:80vw;
+       margin: 0 auto; 
+       margin-top:250px;
+      
+      text-align: left;
+  }
+  
+  .bottom-text{
+    color:white;
+    text-transform: capitalize;
+    
+    font-weight: bold;
+  }
+  .bottom-contaier{
+      display: flex;
+    flex-direction: column;  
+    }
+    
+  .bottom-subcontainer-1,.bottom-subcontainer-2{
+    display: flex;
+    justify-content: space-around;     
+    margin-top:20px;
+    align-content: center;
+    
+    
+}
+  .single-bottom
+{
+    
+    box-sizing: border-box;
+    width:300px;
+    height:auto;
+    text-align: center;
+    /* background: rgb(35,44,66); */
+   
+    margin-right: 30px;
+    border-radius: 6px;
+    transition: all 2s linear;
+    cursor: pointer;
+    padding:2% 2%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content:left;
+    align-content: space-between;
+}
+/* .single-bottom:hover{
+    /* background: rgb(49,59,84);
+} */
+.single-bottom-div1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.single-bottom-div2{
+    margin-top:10px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.single-bottom-percentage{
+    font-size: 16px;
+}
+.single-bottom-title{
+    color:grey;
+    text-transform: capitalize;
+}
+.single-bottom-number{
+    font-size: 24px;
+    color:white;
+}
+  /* end of bottom section */
+
+  @media screen and (max-width:800px) {
+    .header{
+        flex-direction: column;
+        width:100%;
+        padding: 0 20px;
+        
+        
+        
+    }
+    .header-text{
+        
+        margin-bottom: 20px;
+    }
+    .header-text{
+        border-bottom: 5px solid grey;
+    }
+    .switch{
+        margin: 0 auto;
+        
+    }
+    
+    .socail-media{
+        margin: 0 auto;
+        margin-top: 20px;
+        align-items: center;
+    }
+    .single-social{
+        margin-bottom: 20px;
+        
+    }
+   
+    .socail-media{
+        flex-direction: column;
+    }  
+    .bottom{
+        margin-top: 950px;
+        
+    }
+    .bottom-contaier,.bottom-subcontainer-1,.bottom-subcontainer-2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .single-bottom{
+        margin-bottom: 20px;
+    }
+  }
+/* end if bottom */
+  /*  single social dark for hover*/
+  .single-socail-dark{
+       background: rgb(35,44,66)
+    };
+.single-socail-dark:hover{
+    background: rgb(49,59,84);
+}
+/* end of single social dark */
+
+
+/*  single social light for hover*/
+.single-socail-light{
+    background: rgb(240,243,250);
+ };
+.single-socail-dark:hover{
+ background: rgb(225,227,240);
+}
+/* end of single social dark */
+
+
+
+ /*  single bottom dark for hover*/
+ .single-bottom-dark{
+    background: rgb(35,44,66);
+ };
+
+.single-bottom-dark:hover{
+ background: rgb(49,59,84);
+ transform: scale(1.1);
+}
+/* end of single bottom dark */
+
+
+/*  single bottom light for hover*/
+.single-bottom-light{
+ background: rgb(240,243,250);
+};
+.single-bottom-light:hover{
+background: rgb(225,227,240);
+}
+/* end of single bottom dark */
